@@ -36,7 +36,7 @@ function App() {
 
     setLoading(true);
     try {
-      const response = await axios.post("http://localhost:5000/generate-voice", {
+      const response = await axios.post("https://voice-generator-14xn.vercel.app/generate-voice", {
         text,
         voiceId,
       });
